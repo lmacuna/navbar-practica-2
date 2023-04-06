@@ -1,0 +1,116 @@
+#root{
+    margin-top: 5px;
+     position: fixed;
+    width: 100%;
+    height: 70vh;
+  /*   border:2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#root-1{
+    width: 20%;
+    height: 80%;
+    background: rgb(0,0,0,0.9);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+#root-2{
+    width: 60%;
+    height: 80%;
+    background: rgb(0,0,0,0.7);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media(max-width:1050px){
+    #root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #root-1{
+        width: 65%;
+        height: 20%;
+        margin-bottom: 2px;
+    }
+    #root-2{
+        height: 80%;
+        width: 65%;
+    }
+}
+@media(max-width:850px){
+    #root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #root-1{
+        width: 100%;
+        height: 20%;
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+    #root-2{
+        /* height: 60%; */
+        width: 100%;
+        height: 90%;
+        padding: 15px;
+         box-sizing: border-box;
+      
+    }
+    .span-datos{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px){
+    .span-datos{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+#datos{
+    width: 80%;
+    height: auto;
+    padding: 15px !important;
+    box-sizing: border-box;
+    
+    
+}
+
+#nombre,#apellido,#fecha-nacimiento,#direccion,#telefono,#email{
+    color: white !important;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+     
+    
+}
+.span-datos{
+    display: inline-block !important;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+  
+}

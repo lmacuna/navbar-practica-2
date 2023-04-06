@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Cinzel','Serif';
+    background-image: url('images/background-cv-web-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll; 
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;  
+  
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+   text-align: center;
+  
+    background: rgb(0,0,0,0.9);
+}
+h1{
+    color:white;
+    margin: auto;
+    width: 50%;
+    
+}
+h3{
+    width: 20%;
+    color:white;
+    margin-right: auto !important;
+    line-height: 80px;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgb(0,0,0,0.7);
+}
+ 
+  
+  
+   
+
+nav{
+    width: 100%;
+    height: 50px;
+   /*  border:1px solid black; */
+    background: rgb(0,0,0,0.8);
+  
+}
+ul{
+    width: 100%;
+    height: 100%;
+   /*  border:1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+li{
+    list-style: none;
+}
+li > a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+nav>ul>li>a:hover{
+    color:rgb(123,123,123) !important;
+}
+#inicio:hover{
+    color:rgb(123,123,123) !important;
+}
+#perfil:hover{
+    color:rgb(123,123,123) !important;
+}
+#estudios:hover{
+    color:rgb(123,123,123) !important;
+}
+#experiencia:hover{
+    color:rgb(123,123,123) !important;
+}
+#proyectos:hover{
+    color:rgb(123,123,123) !important;
+}
+#check{
+    display: none;
+}
+#checkbox{
+    display: none;
+    z-index: 3;
+}
+span{
+    display: none;
+}
+.span-on{
+    display: block !important;
+    color: white;
+}
+.rotar-icon{
+    transform: rotate(-90deg) !important;
+    transition: all 0.2s;
+    width: 5%;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+}
+@media (min-width:1051px){
+    span{
+        display: flex;
+       
+    }
+    .icon{
+       display: none;
+    }
+}
+@media (max-width:1050px){
+    nav{
+        top: 80px;
+      /*   border:1px solid black; */
+        width:5%;
+        height: 100%;
+        z-index: 2;
+      transition: all 0.2s;
+      padding: 15px;
+      box-sizing: border-box;
+      position:absolute;
+     
+
+    }
+  
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+     li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+     }   
+     a{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+       
+     }   
+   
+    #check{
+        visibility: hidden;
+        display: block;
+        
+    }
+    #checkbox{
+        color:white;
+        display: block;
+        float: left !important;
+        width: 3%;
+        height: 20px;
+        z-index: 3 !important;
+        position: relative;
+         transform: rotate(0deg); 
+        transition: all 0.2s;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    #check:checked~nav{
+        top: 80px;
+        width: 22%;
+        transition:all 0.2s;
+        z-index: 2 !important;
+        
+
+    }
+   
+
+}
+
+
+@media (max-width:800px){
+    a{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media (max-width:520px){
+    a{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size: 22px;
+    }
+    #check:checked~nav{
+        top: 80px;
+        width: 50%;
+        transition:all 0.2s;
+        z-index: 2 !important;
+        
+
+    }
+    .icon-movil{
+        width: 20px !important;
+        height: 20px !important;
+    }
+  
+}
+
+@media (max-width:400px){
+    h1{
+        font-size: 18px;
+    }
+    h3{
+       font-size: 16px;
+    }
+}
+
+
