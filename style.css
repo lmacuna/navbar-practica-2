@@ -251,7 +251,7 @@ span{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 /*   background: #b30000;  */
-background: black;
+background: rgb(22,22,22);
 }
 
 
